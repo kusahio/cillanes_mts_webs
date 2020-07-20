@@ -1510,8 +1510,20 @@ body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-chec
     font-weight: 600 !important;
 }
 
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-checkout-container .step-title {
+    font-weight: 600 !important;
+}
+
 body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-checkout-container .step-title .fa-stack {
-    background-color: #FF1B15 !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center;
+}
+
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-checkout-container .step-title .fa-stack i {
+    display: block !important;
+    color: #ff5e59;
+    font-size: 24px;
 }
 
 body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-checkout-container .step-title .fa-stack .fa-stack-text {
@@ -1578,7 +1590,7 @@ body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-paym
 }
 
 body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .one-step-checkout-container #opc-sidebar .order-summary .step-title i.fa-check-circle {
-    background-color: #FF1B15 !important;
+    background-color: #ff5e59 !important;
 }
 
 body.onestepcheckout-index-index.page-layout-1column input[type=checkbox]+label {
