@@ -1,0 +1,41 @@
+//===
+// Para setear la fecha es en el siguente orden: MM/DD/hora en la que termina
+//===
+const DATE_TARGET = new Date('07/17/2020 0:01 AM');
+// DOM para render
+const SPAN_DIA = document.querySelector('span#dia');
+const SPAN_HORA = document.querySelector('span#hora');
+const SPAN_MIN = document.querySelector('span#min');
+const SPAN_SEG = document.querySelector('span#seg');
+
+// Cálculo de milisegundos
+const MILLISECONDS_OF_A_SECOND = 1000;
+const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+//===
+// Funciones
+//===
+function updateCountdown() {
+    // Cálculos
+    const NOW = new Date()
+    const DURATION = DATE_TARGET - NOW;
+    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+
+    // Render
+    SPAN_DIA.textContent = REMAINING_DAYS;
+    SPAN_HORA.textContent = REMAINING_HOURS;
+    SPAN_MIN.textContent = REMAINING_MINUTES;
+    SPAN_SEG.textContent = REMAINING_SECONDS;
+}
+
+//===
+// INIT
+//===
+updateCountdown();
+// Se refresca cada segundo
+setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);

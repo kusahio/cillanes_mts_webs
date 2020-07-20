@@ -1,0 +1,126 @@
+<!--Contactos-->
+<div class="head-msg" style="color: #fff; padding: 10px; text-align: center; background: #FF1B15; font-size: 13px;">
+    <i class="fal fa-phone"></i> <a href="tel:+56 22 460 1849">+56 22 460 1800</a>
+    <i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=56940052032&amp;text=Hola!!!" target="_blank">+56 9 40052032</a>
+    <i class="fal fa-envelope"></i> <a href="mailto:ventaweb@oviedo.cl">ventaweb@oviedo.cl</a> - <a href="/tiendas">Nuestras tiendas</a> - <a href="https://www.facebook.com/Oviedoferreterias/" target="_blank"><i
+            class="fab fa-facebook"></i></a> <a href="https://www.instagram.com/oviedo_ferreterias" target="_blank"><i
+            class="fab fa-instagram"></i></a>
+</div>
+
+
+
+<!---->
+
+<!--Buscador-->
+<div class="field search">
+    <label class="label" for="search" data-role="minisearch-label">
+        <span>Search</span>
+    </label>
+    <div class="control">
+        <input id="search" type="text" name="q" value="" placeholder="¿Qué estás buscando?" class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-expanded="false" aria-autocomplete="both" autocomplete="off">
+        <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+    </div>
+</div>
+<div class="actions">
+    <button type="submit" title="Búsqueda" class="action search" disabled="">
+        <span><span>Búsqueda</span></span>
+    </button>
+</div>
+<!---->
+
+<!--Icono carro-->
+<a href="https://www.oviedo.cl/checkout/cart/">
+    <span>
+        <span class="far fa-shopping-cart icon-size"></span>
+    <span class="label" style="display:none;">Bolsa de compras</span>
+    </span>
+</a>
+
+<a class="action showcart head-cart" href="http://10.1.1.159/checkout/cart/" data-bind="scope: 'minicart_content'">
+    <i class="far fa-shopping-cart icon-size"></i>
+    <span class="text"><span data-bind="html: getCartParam('subtotal')"></span></span>
+    <span class="head-cart__count counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+         <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+    <span class="counter-label">
+         <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+         </span>
+    </span>
+</a>
+<!---->
+
+<!--script>
+    var coll = document.getElementsByClassName("mobile_footer");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script-->
+
+<!--Caja Descuento-->
+<style>
+    .offer-dct {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        text-transform: uppercase;
+        color: #fff;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .offer-dct h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .offer-dct .hasta {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .offer-dct b {
+        font-size: 70px;
+        line-height: 65px;
+    }
+    
+    .offer-dct b span {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: none;
+    }
+    
+    .offer-dct .ver-mas {
+        background-color: #FF1B15;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 5px 10px;
+        transition: ease all 0.3s;
+    }
+    
+    .destacados1 .row-destacados__col-img:hover .offer-dct .ver-mas {
+        padding: 5px 15px;
+    }
+    
+    .destacado-home .row-destacados__col-img .bann-destacados:hover img {
+        transition: unset !important;
+        transform: unset !important;
+    }
+</style>
+<div class="offer-dct">
+    <h4>soldadoras</h4>
+    <span class="hasta">hasta</span>
+    <span>
+    <b>20%<span>dcto.</span></b>
+    </span>
+    <span class="ver-mas">ver todo ofertas ></span>
+</div>
