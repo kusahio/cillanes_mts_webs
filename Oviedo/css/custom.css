@@ -725,8 +725,6 @@ print {
     .product {
         flex-direction: column
     }
-    .destacados1,
-    .destacados2 {}
 }
 
 @media (max-width: 480px) {
@@ -925,6 +923,7 @@ print {
 
 .sticky {
     position: fixed;
+    z-index: 6;
     top: 0;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -1893,6 +1892,18 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 .products-grid .caja__precio.d-price-normal .only__internet {
     font-size: calc(100% - 5px) !important;
+}
+
+.category .block.filter .filter-options .filter-options-title {
+    background: none !important;
+}
+
+.category .toolbar-products {
+    align-items: center;
+}
+
+.category .control {
+    width: unset !important
 }
 
 @media (max-width: 768px) {
