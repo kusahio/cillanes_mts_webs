@@ -618,8 +618,8 @@ print {
     padding-bottom: 1em !important
 }
 
-.titles {
-    background-color: #efefef;
+.destacado-home .titles {
+    background-color: #efefef !important;
     padding: 1em 0 .5em !important
 }
 
@@ -637,6 +637,15 @@ print {
 
 #LosMasVendidos .product {
     background-color: #fff !important
+}
+
+.destacado-home .price-box .caja__precio {
+    width: 100%;
+}
+
+.destacado-home .price-box .caja__precio .d-price-normal {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -677,17 +686,23 @@ print {
     .slick-next {
         right: -15px !important
     }
-    .product {
+    .destacado-home .product {
         flex-direction: column;
+    }
+    .destacado-home .product a,
+    .destacado-home .product .product__detail {
+        width: 90%;
     }
     .product__detail .box-add {
         bottom: .5em;
     }
-    .product__detail .box-add form {
-        flex-direction: column;
+    .destacado-home .product__detail .box-add form {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
-    .product__detail .box-add form .btn-add {
-        width: 90% !important;
+    .destacado-home .product__detail .box-add form .btn-add {
+        width: 60% !important;
         margin-left: 0 !important;
         /*margin-top: ;*/
     }
@@ -709,6 +724,15 @@ print {
     }
     .product {
         flex-direction: column
+    }
+    .destacados1,
+    .destacados2 {}
+}
+
+@media (max-width: 480px) {
+    .destacado-home .product a,
+    .destacado-home .product .product__detail {
+        width: 70%;
     }
 }
 
@@ -735,11 +759,12 @@ print {
 
 .product__detail .box-add form .add-btns:hover {
     transform: scale(1) !important;
+    color: #fff !important;
 }
 
 .product__detail .box-add form .add-btns {
     color: #4e4e4e !important;
-    border: 1 px solid #4e4e4e !important;
+    border: 1px solid #4e4e4e !important;
     border-radius: 5px;
 }
 
@@ -1183,10 +1208,10 @@ print {
     margin: 10px 0;
 }
 
-.price-box .caja__precio {
+.ficha-detail .price-box .caja__precio {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
 .price-box .caja__precio .d-price-oferta {
@@ -1253,7 +1278,7 @@ print {
 }
 
 .price-box .caja__precio .only__internet {
-    font-size: 16px;
+    font-size: calc(100% - 9px);
     font-weight: 600;
     color: #1b6ca8;
 }
@@ -1853,3 +1878,35 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
     background-color: #FF1B15 !important;
     border-radius: 4px;
 }
+
+
+/* PLP */
+
+.products-grid .caja__precio {
+    width: 100%;
+}
+
+.products-grid .caja__precio .d-price-normal {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-grid .caja__precio.d-price-normal .only__internet {
+    font-size: calc(100% - 5px) !important;
+}
+
+@media (max-width: 768px) {
+    .products-grid .product__detail .box-add form {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .products-grid .product__detail .box-add form .btn-add {
+        width: 45% !important;
+    }
+    .products-grid .product__detail .box-add form .btn-add i {
+        display: none;
+    }
+}
+
+
+/* /PLP */
