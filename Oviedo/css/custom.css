@@ -732,6 +732,12 @@ print {
     .destacado-home .product .product__detail {
         width: 70%;
     }
+    .ficha .ficha-row__col .ficha-detail__add form .ficha-add-cart {
+        width: 150px !important;
+    }
+    .ficha .ficha-row__col .ficha-detail__add form input {
+        margin: 0 5px !important;
+    }
 }
 
 
@@ -910,6 +916,7 @@ print {
     .oviedo-ig {
         text-align: center;
         flex-direction: column;
+        font-size: 18px;
     }
 }
 
@@ -1332,6 +1339,7 @@ print {
     border: 1px solid #ff5e59 !important;
     border-radius: 5px !important;
     background-color: transparent !important;
+    width: 150px;
 }
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add-cart:hover {
@@ -1922,3 +1930,15 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 
 /* /PLP */
+
+
+/*Menu mobile*/
+
+@media only screen and (max-width: 767px) {
+    .navigation .parent .level-top:after {
+        top: 8px !important;
+    }
+}
+
+
+/* Menu mobile */
