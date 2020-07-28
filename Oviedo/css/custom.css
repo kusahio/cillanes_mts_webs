@@ -58,7 +58,7 @@ select:not([disabled]):focus {
     box-shadow: none !important
 }
 
-header .head-top .head-nav-top__cart .head-search button.action.search {
+header .head-top .head-nav-top__cart .head-search .block-content button.action.search {
     right: 0 !important;
     background: #FF1B15 !important;
     border-radius: 0 8px 8px 0 !important
@@ -1088,6 +1088,12 @@ print {
     position: relative;
 }
 
+.ficha .price-box .caja__precio .only__internet {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1b6ca8;
+}
+
 .dcto,
 .oferta {
     background-color: #FF1B15;
@@ -1436,11 +1442,15 @@ print {
 
 /* Detalle Producto */
 
-.product.info.detailed .product.data.items .data.item.active .switch:hover {
+.container .product.info.detailed .product.data.items .data.item.active .switch {
+    background: #FF1B15 !important;
+}
+
+.container .product.info.detailed .product.data.items .data.item.active .switch:hover {
     background: #ff5e59 !important;
 }
 
-.product.info.detailed .product.data.items .data.item .switch:hover {
+.container .product.info.detailed .product.data.items .data.item .switch:hover {
     background: #8b8b8b !important;
 }
 
@@ -1914,6 +1924,20 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 .category .control {
     width: unset !important
+}
+
+.category .toolbar-products .pages-items .item.current .page {
+    background-color: #FF1B15 !important;
+    border-radius: 3px;
+}
+
+.category .toolbar-products .pages-items .item .page:hover {
+    border-radius: 3px;
+}
+
+.category .toolbar-products .pages-items .item .action.next:after {
+    border-top: 2px solid #FF1B15;
+    border-right: 2px solid #FF1B15;
 }
 
 @media (max-width: 768px) {

@@ -88,7 +88,7 @@ define([
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        dots: true,
+                        dots: false,
                     }
                 },
                 {
@@ -96,7 +96,7 @@ define([
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
+                        dots: false,
                     }
                 }
             ]
@@ -120,7 +120,7 @@ define([
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        dots: true,
+                        dots: false,
                     }
                 },
                 {
@@ -128,7 +128,7 @@ define([
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
+                        dots: false,
                     }
                 }
             ]
@@ -151,7 +151,7 @@ define([
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        dots: true,
+                        dots: false,
                     }
                 },
                 {
@@ -159,7 +159,7 @@ define([
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
+                        dots: false,
                     }
                 }
             ]
@@ -182,7 +182,7 @@ define([
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2,
-                        dots: true,
+                        dots: false,
                     }
                 },
                 {
@@ -190,7 +190,7 @@ define([
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: true,
+                        dots: false,
                     }
                 }
             ]
