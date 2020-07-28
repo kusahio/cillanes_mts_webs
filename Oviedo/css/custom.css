@@ -212,6 +212,7 @@ print {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 14px;
 }
 
 .info-compra .row-info__col .info-txt span,
