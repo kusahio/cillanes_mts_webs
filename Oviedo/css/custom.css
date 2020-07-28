@@ -204,11 +204,6 @@ print {
     width: 25% !important;
 }
 
-.info-compra .slick-track,
-.info-compra .draggable {
-    width: 100% !important;
-}
-
 .info-compra .row-info {
     background: #000;
     padding: 1.5% 0.5%
@@ -219,7 +214,8 @@ print {
     flex-direction: column;
     display: flex !important;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
 
 .info-compra .row-info__col .info-txt span,
