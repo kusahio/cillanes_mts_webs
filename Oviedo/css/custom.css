@@ -2109,7 +2109,7 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 /* Slider */
 
 .sparsh_banner .sparsh_banner_slider .slick-prev,
-.sparsh_banner .sparsh_banner_slide .slick-next {
+.sparsh_banner .sparsh_banner_slider .slick-next {
     background-color: #FF1B15 !important;
 }
 
