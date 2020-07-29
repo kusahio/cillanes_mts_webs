@@ -7,7 +7,7 @@
 /**/
 
 header .head-top {
-    padding: 2em 0;
+    padding: 2em 0 !important;
 }
 
 header .head-top .head-nav-top__logo .head-logo img {
@@ -2139,7 +2139,8 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 }
 
 .politicas .declaracion,
-.politicas .antecedentes {
+.politicas .antecedentes,
+.politicas .calidad {
     margin-top: 2rem;
 }
 
@@ -2168,5 +2169,9 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
     display: block !important;
 }
 
+.politicas .calidad_p {
+    flex-direction: row !important;
+}
 
-/* /Politicas - Terminos*/
+
+/* /Politicas - Terminos - Calidad*/
