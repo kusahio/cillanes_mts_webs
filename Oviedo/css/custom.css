@@ -2112,3 +2112,61 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 
 /* /Slider */
+
+
+/*Politicas - Terminos*/
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.politicas h2 {
+    font-size: 24px;
+    color: #3d3d3d;
+    font-weight: 600;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.politicas h3 {
+    font-size: 18px;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+
+.politicas .declaracion,
+.politicas .antecedentes {
+    margin-top: 2rem;
+}
+
+.politicas div {
+    padding: 1% 0;
+}
+
+.politicas div p {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: #3d3d3d;
+    font-size: 14px;
+}
+
+.politicas div p span {
+    margin: 10px 0;
+}
+
+.politicas div i {
+    font-size: 24px;
+    color: #8b8b8b;
+}
+
+.politicas div .terminos {
+    display: block !important;
+}
+
+
+/* /Politicas - Terminos*/
