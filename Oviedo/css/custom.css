@@ -2173,5 +2173,84 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
     flex-direction: row !important;
 }
 
+.pag_tienda {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.pag_tienda .card_tienda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: max-content;
+    color: #3d3d3d;
+    margin: 2em;
+}
+
+.pag_tienda .card_tienda h3 {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 10px 8px;
+}
+
+.pag_tienda .card_tienda h3,
+.pag_tienda .card_tienda div {
+    width: 30%;
+    height: max-content;
+    margin-right: 3%;
+}
+
+.pag_tienda .card_tienda .card-img-store {
+    width: 20%;
+    height: 116px;
+}
+
+.pag_tienda .card_tienda .card-img-store img {
+    width: 100%;
+    height: 116px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+}
+
+.pag_tienda .card_tienda div {
+    display: flex;
+    flex-direction: column;
+}
+
+.pag_tienda .card_tienda div span {
+    margin: 1px 0;
+}
+
+@media(max-width:768px) {
+    .card_tienda .info-tienda {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:480px) {
+    .pag_tienda .card_tienda {
+        flex-direction: column;
+    }
+    .pag_tienda .card_tienda h3,
+    .pag_tienda .card_tienda div {
+        width: 95%;
+    }
+    .pag_tienda .card_tienda .card-img-store {
+        width: 95%;
+    }
+    .pag_tienda .card_tienda h3,
+    .pag_tienda .card_tienda div {
+        margin-right: 0;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .pag_tienda .mayorista {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 /* /Politicas - Terminos - Calidad*/
