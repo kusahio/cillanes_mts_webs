@@ -1095,9 +1095,10 @@ print {
 }
 
 .ficha .price-box .caja__precio .only__internet {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1b6ca8;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF1B15;
+    margin: 5px 0 0;
 }
 
 .dcto,
@@ -1124,6 +1125,50 @@ print {
 
 /*Ficha Producto*/
 
+@media(max-width:768px) {
+    .product__short_description .comment {
+        width: 100%;
+    }
+}
+
+
+/*img*/
+
+.ficha .ficha-row__col--img {
+    width: 60% !important;
+}
+
+
+/*/img*/
+
+
+/*Descripcion*/
+
+.ficha .ficha-row__col--txt {
+    width: 35% !important;
+}
+
+.ficha .ficha-row__col .ficha-detail__info i {
+    color: #FF1B15 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .ficha .ficha-row__col--img,
+    .ficha .ficha-row__col--txt {
+        width: 100% !important;
+    }
+}
+
+.ficha .ficha-row__col .ficha-detail__ok span {
+    color: #999 !important;
+    font-size: 12px !important;
+    padding-left: 0 !important;
+    font-weight: 400 !important;
+}
+
+
+/*Descripcion*/
+
 .ficha .ficha-row__col .ficha-detail__add {
     padding: .5em 0 !important
 }
@@ -1135,13 +1180,16 @@ print {
 }
 
 .ficha .ficha-row__col .ficha-detail__name {
-    font-size: 22px !important;
-    font-weight: 400 !important
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: #4f4d51;
+    text-transform: unset !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__sku {
-    font-size: 14px !important;
-    color: #3d3d3d !important;
+    font-size: 12px !important;
+    color: #999 !important;
+    font-weight: 400;
     padding: 5px 0;
 }
 
@@ -1254,6 +1302,7 @@ print {
 .price-box .caja__precio .d-price-oferta {
     display: flex;
     flex-direction: column;
+    padding: 0 !important;
 }
 
 .products-related .price-box .caja__precio {
@@ -1269,28 +1318,47 @@ print {
     font-size: 16px;
 }
 
+.ficha .d-price-oferta span.price-cuotas {
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    flex-direction: column;
+}
+
+.ficha .d-price-oferta span.price-cuotas img {
+    width: max-content;
+}
+
 .ficha .d-price-oferta span.price-final {
     display: flex !important;
     flex-direction: row;
     align-items: center;
-    font-size: 18px !important;
-    color: #3d3d3d !important;
+    font-size: 10px !important;
+    color: #fff !important;
+    margin: 5px 0;
+}
+
+.ficha .d-price-oferta span.price-final .iva {
+    background: #FF1B15;
+    padding: 2px 3px;
+    font-weight: 400;
 }
 
 .ficha .d-price-oferta .price-wrapper {
-    font-size: 36px;
+    font-size: 24px;
     color: #FF1B15;
 }
 
 .ficha .d-price-oferta span.price-tachado {
     color: #8b8b8b !important;
-    margin: 10px 0;
+    margin: 0;
+    text-decoration: none !important;
 }
 
 .ficha .d-price-oferta .price-tachado .price-wrapper {
-    font-size: 18px;
-    color: #8b8b8b;
-    font-weight: 600;
+    font-size: 12px;
+    color: #999;
+    font-weight: 400;
 }
 
 .price-box .caja__precio .before__price {
@@ -1340,12 +1408,20 @@ print {
 }
 
 
+/*fotorama*/
+
+.ficha .gallery-placeholder {
+    border: 1px solid #ebebeb;
+}
+
+
 /*Agregar---Quitar*/
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add {
-    border: 1px solid #4e4e4e !important;
-    color: #4e4e4e !important;
-    border-radius: 5px !important
+    border: 1px solid #ebebeb !important;
+    color: #4f4d51 !important;
+    width: 48px !important;
+    height: 48px !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add:active {
@@ -1353,27 +1429,34 @@ print {
 }
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add:hover {
-    background-color: #3d3d3d !important;
-    border: 1px solid #3d3d3d !important;
+    background-color: #f8f8f8 !important;
+}
+
+.ficha .ficha-row__col .ficha-detail__add form .quantity-minus:hover.ficha-add,
+.ficha .ficha-row__col .ficha-detail__add form .quantity-plus:hover.ficha-add {
+    color: #4f4d51 !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__add form input {
     color: #3d3d3d !important;
-    border: 1px solid #8b8b8b !important;
-    border-radius: 5px !important;
-    margin: 0 15px;
+    border: none !important;
+    border-top: 1px solid #ebebeb !important;
+    border-bottom: 1px solid #ebebeb !important;
+    width: 48px !important;
+    height: 48px !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add-cart {
-    color: #FF1B15 !important;
-    border: 1px solid #ff5e59 !important;
-    border-radius: 5px !important;
-    background-color: transparent !important;
-    width: 150px;
+    color: #fff !important;
+    border: 1px solid #FF1B15!important;
+    border-radius: 4px !important;
+    background-color: #FF1B15 !important;
+    width: 150px !important;
+    height: 48px !important;
+    font-size: 14px !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__add form .ficha-add-cart:hover {
-    background-color: #FF1B15 !important;
     color: #fff !important;
     border: 1px solid #FF1B15 !important;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
@@ -1381,6 +1464,32 @@ print {
 
 
 /*-/Agregar--Quitar-*/
+
+
+/*Favorito*/
+
+.ficha .ficha-row__col .favoritos {
+    font-size: 14px;
+}
+
+.ficha .ficha-row__col .favoritos .btn {
+    text-decoration: none !important;
+    color: #999 !important;
+    padding: 0 !important;
+    transition: ease all .3s;
+}
+
+.ficha .ficha-row__col .favoritos .btn:hover {
+    color: #ff5e59 !important;
+}
+
+.ficha .ficha-row__col .favoritos .btn:active {
+    box-shadow: none !important;
+}
+
+.ficha .ficha-row__col .favoritos .btn i {
+    color: #FF1B15 !important;
+}
 
 .desp_share {
     display: flex;
