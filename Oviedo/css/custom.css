@@ -278,6 +278,15 @@ print {
     display: none;
 }
 
+#LosMasVendidos .product__detail .price-box .d-price-normal .iva {
+    font-size: 14px;
+    color: #8b8b8b;
+}
+
+#LosMasVendidos .product__detail .price-box .d-price-normal .price {
+    font-size: 14px;
+}
+
 
 /*----------*/
 
@@ -430,6 +439,23 @@ print {
     .destacado-home .row-destacados__col-img {
         display: flex !important
     }
+}
+
+.destacados1 .caja__precio .d-price-normal span,
+.destacados1 .caja__precio .d-price-normal .iva,
+.destacados2 .caja__precio .d-price-normal span,
+.destacados2 .caja__precio .d-price-normal .iva {
+    font-size: 14px;
+}
+
+.destacados1 .caja__precio .d-price-normal .iva,
+.destacados2 .caja__precio .d-price-normal .iva {
+    color: #8b8b8b;
+}
+
+.destacados1 .caja__precio .only__internet,
+.destacados2 .caja__precio .only__internet {
+    font-size: calc(100% - 9px) !important;
 }
 
 
@@ -1622,6 +1648,19 @@ print {
     background: #8b8b8b !important;
 }
 
+.products-related .price-box .caja__precio .d-price-normal .iva,
+.products-upsell .price-box .caja__precio .d-price-normal .iva {
+    color: #8b8b8b;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+@media(max-width:580px) {
+    .column.main .block .title strong {
+        font-size: 16px !important;
+    }
+}
+
 
 /* /Detalle Producto */
 
@@ -1645,7 +1684,7 @@ print {
 .column.main .block .title strong {
     padding: 0 40px !important;
     background: none !important;
-    font-size: 24px !important;
+    font-size: 24px;
     font-weight: 600 !important;
 }
 
@@ -2083,8 +2122,16 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
     flex-direction: column;
 }
 
-.products-grid .caja__precio.d-price-normal .only__internet {
-    font-size: calc(100% - 5px) !important;
+.products-grid .caja__precio .d-price-normal span {
+    font-size: 14px;
+}
+
+.products-grid .caja__precio .d-price-normal .iva {
+    color: #8b8b8b;
+}
+
+.products-grid .caja__precio .d-price-normal .only__internet {
+    font-size: calc(100% - 9px) !important;
 }
 
 .category .block.filter .filter-options .filter-options-title {
