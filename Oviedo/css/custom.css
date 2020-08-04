@@ -1735,7 +1735,7 @@ print {
 }
 
 .product-item-info .product-item-details .price-final_price .caja__precio .only__internet {
-    font-size: 16px;
+    font-size: 16px !important;
     font-weight: 600;
     color: #1b6ca8;
 }
