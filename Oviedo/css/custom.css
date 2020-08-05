@@ -1937,6 +1937,15 @@ body.account .columns .column.main .block .block-content .box .box-actions a.cha
 
 /* Checkout */
 
+.page-wrapper .page-header .content a img {
+    width: 220px !important;
+    height: auto !important;
+}
+
+body.checkout-index-index #maincontent .columns .column .checkout-container {
+    padding: 0 0 5em !important;
+}
+
 body.checkout-index-index #checkout-step-shipping .addresses .control .shipping-address-items .shipping-address-item:after {
     background-color: #ff5e59 !important;
 }
