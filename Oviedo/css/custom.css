@@ -1147,7 +1147,7 @@ print {
     font-size: 14px;
     font-weight: 600;
     color: #FF1B15;
-    margin: 5px 0 0;
+    margin: 2px 0 0;
 }
 
 .dcto,
@@ -1240,14 +1240,12 @@ print {
 }
 
 .ficha .ficha-row__col .ficha-detail__ok span {
-    color: #999 !important;
     font-size: 12px !important;
     padding-left: 0 !important;
-    font-weight: 400 !important;
 }
 
 .ficha .ficha-row__col .ficha-detail__ok i {
-    display: none !important;
+    margin-right: 5px;
 }
 
 
@@ -1437,12 +1435,22 @@ print {
     color: #8b8b8b !important;
     margin: 0;
     text-decoration: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ficha .d-price-oferta span.price-tachado .d-price-antes {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 5px;
 }
 
 .ficha .d-price-oferta .price-tachado .price-wrapper {
-    font-size: 14px;
+    font-size: 16px;
     color: #999;
     font-weight: 600;
+    text-decoration: line-through;
 }
 
 .price-box .caja__precio .before__price {
@@ -1591,8 +1599,8 @@ print {
 
 .share_prod {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     margin-top: 1em;
 }
 
@@ -2702,3 +2710,38 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 
 /* /Pagos estados */
+
+
+/* Redes Sociales */
+
+.contactos {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.msn_fb,
+.wsp_fb {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: #fff;
+}
+
+.msn_fb {
+    background: #0096fe;
+}
+
+.wsp_fb {
+    background: #25d366;
+}
+
+
+/* /Redes Sociales */
