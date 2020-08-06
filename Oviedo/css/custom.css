@@ -1180,6 +1180,12 @@ print {
     }
 }
 
+.product-info-price .caja__precio .unidad-medida {
+    font-size: 18px;
+    color: #4f4d51;
+    margin-right: 5px;
+}
+
 
 /*img*/
 
@@ -1602,6 +1608,11 @@ print {
     flex-direction: row;
     align-items: center;
     margin-top: 1em;
+}
+
+.share_prod .a2a_svg {
+    height: 24px;
+    width: 24px;
 }
 
 .share_prod h2 {
