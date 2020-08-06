@@ -455,7 +455,7 @@ print {
 
 .destacados1 .caja__precio .only__internet,
 .destacados2 .caja__precio .only__internet {
-    font-size: calc(100% - 9px) !important;
+    font-size: 14px !important;
 }
 
 
@@ -1476,7 +1476,7 @@ print {
 }
 
 .price-box .caja__precio .only__internet {
-    font-size: calc(100% - 9px);
+    font-size: 14px;
     font-weight: 600;
     color: #1b6ca8;
 }
@@ -1774,7 +1774,7 @@ print {
 }
 
 .product-item-info .product-item-details .price-final_price .caja__precio .only__internet {
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 600;
     color: #1b6ca8;
 }
@@ -2231,7 +2231,7 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 }
 
 .products-grid .caja__precio .d-price-normal .only__internet {
-    font-size: calc(100% - 9px) !important;
+    font-size: 14px !important;
 }
 
 .category .block.filter .filter-options .filter-options-title {
@@ -2745,3 +2745,39 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 
 /* /Redes Sociales */
+
+
+/* Search page */
+
+.search .price-box .caja__precio .d-price-oferta .price-final {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.search .price-box .caja__precio .d-price-oferta .price-final .price {
+    color: #FF1B15;
+}
+
+.search .price-box .caja__precio .d-price-oferta .price-final .iva {
+    color: #8b8b8b;
+}
+
+.search .price-box .caja__precio .d-price-oferta .price-tachado {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.search .price-box .caja__precio .d-price-oferta .price-tachado .d-price-antes {
+    margin-right: 5px;
+}
+
+.search .price-box .caja__precio .only__internet {
+    font-size: 14px;
+}
+
+
+/* /Search page */
