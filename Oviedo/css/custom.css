@@ -2797,5 +2797,9 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 /* Breadcrumb */
 
 .breadcrumbs .items .item {
-    border-right: 1px solid #8b8b8b;
+    border-right: 1px solid #8b8b8b !important;
+}
+
+.breadcrumbs .items .item.product {
+    border-right: none !important;
 }
