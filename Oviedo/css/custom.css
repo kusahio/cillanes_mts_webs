@@ -1174,6 +1174,10 @@ print {
 
 /*Ficha Producto*/
 
+.ficha .ficha-row__col .ficha-detail .d-price-normal .unidad-medida {
+    font-size: 10px !important;
+}
+
 @media(max-width:768px) {
     .product__short_description .comment {
         width: 100%;
