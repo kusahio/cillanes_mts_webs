@@ -2730,24 +2730,30 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 /* Redes Sociales */
 
 .contactos {
-    position: absolute;
-    bottom: 2%;
+    position: fixed;
+    bottom: -20%;
     right: 2%;
     display: flex;
     flex-direction: column;
+    transition: ease all .75s;
 }
 
-.msn_fb,
-.wsp_fb {
+.contactos-active {
+    bottom: 8rem !important;
+}
+
+.contactos .msn_fb,
+.contactos .wsp_fb {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     margin-bottom: 1em;
-    font-size: 24px;
+    font-size: 32px;
     color: #fff;
+    cursor: pointer;
 }
 
 .msn_fb {
