@@ -1235,7 +1235,8 @@ print {
 /*Descripcion*/
 
 .ficha .ficha-row__col--txt {
-    width: 35% !important;
+    width: 50% !important;
+    margin-left: 3rem;
 }
 
 .ficha .ficha-row__col .ficha-detail__info i {
@@ -1246,6 +1247,9 @@ print {
     .ficha .ficha-row__col--img,
     .ficha .ficha-row__col--txt {
         width: 100% !important;
+    }
+    .ficha .ficha-row__col--txt {
+        margin-left: 0;
     }
 }
 
@@ -1513,8 +1517,12 @@ print {
 
 /*fotorama*/
 
-.ficha .gallery-placeholder {
+.fotorama__stage {
     border: 1px solid #ebebeb;
+}
+
+.fotorama__nav-wrap--horizontal {
+    margin-top: 1rem;
 }
 
 
@@ -1758,6 +1766,23 @@ print {
 .block.upsell .block-content.content .product-items .product-item,
 .block.crosssell .block-content.content .product-items .product-item {
     border-right: none !important;
+    padding: 1em;
+}
+
+.block.related .block-content.content .product-items .product-item .product-item-info,
+.block.upsell .block-content.content .product-items .product-item .product-item-info,
+.block.crosssell .block-content.content .product-items .product-item .product-item-info {
+    transition: ease all .3s;
+    border-radius: 8px;
+    padding: .5em 0;
+    border: 1px solid #ececec;
+    background: #fff;
+}
+
+.block.related .block-content.content .product-items .product-item .product-item-info:hover,
+.block.upsell .block-content.content .product-items .product-item .product-item-info:hover,
+.block.crosssell .block-content.content .product-items .product-item .product-item-info:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 .product:hover {
@@ -1774,7 +1799,16 @@ print {
 
 .block-content .product-item-name,
 .block-content .product.name a {
-    font-weight: 600;
+    font-size: 12px
+}
+
+.block.related .block-content .products-related,
+.block.upsell .block-content .products-upsell {
+    background: #f5f5f5;
+}
+
+.block.upsell .block-content .products-upsell {
+    margin-bottom: 4em;
 }
 
 .details .caja__precio .d-price-normal {
@@ -1795,8 +1829,8 @@ print {
 }
 
 .product-item-info .product-item-details .price-final_price .caja__precio .price-wrapper {
-    color: #3d3d3d;
-    font-size: 16px;
+    color: #000;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -2732,7 +2766,7 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 .contactos {
     position: fixed;
     bottom: -20%;
-    right: 2%;
+    right: 1.5em;
     display: flex;
     flex-direction: column;
     transition: ease all .75s;
