@@ -1,0 +1,260 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Optimizador de cortes Ferretería Prat</title>
+    <!--ESTILOS GENERALES-->
+    <link rel="stylesheet" type="text/css" href="https://www.ferreteriaprat.cl/skin/frontend/shopper/default/css/override.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="preheader">
+            <span>Compra online y retira en tienda. Recuerda recibir tu notificación antes de retirar tu compra</span>
+        </div>
+        <div class="logo">
+            <a href="https://www.ferreteriaprat.cl/">
+                <img src="https://www.ferreteriaprat.cl/contenidos/logo_tienda@2.png">
+            </a>
+            <span class="border"></span>
+        </div>
+    </header>
+
+    <div class="flex-container">
+        <div class="tableros-cant">
+            <div>
+                <span>Para este proyecto necesitarás <b>0 tablero(s)</b></span>
+                <span>Llevas <b>0 m2</b> en <b>0 cortes</b></span>
+            </div>
+            <div>
+                <button>Optimizar tablero</button>
+            </div>
+        </div>
+        <section class="proyecto">
+            <div class="titulo">
+                <h1>Optimizador de cortes</h1>
+                <p>Dimensiona y calcula el material que necesitas para tus muebles y/o proyectos.</p>
+
+                <p class="info2">
+                    Por seguridad la medida mínima que puedes ingresar es de 100 mm y el corte no puede ser inferior de 350 x100 mm.
+                </p>
+            </div>
+            <div class="datos">
+                <div class="nombre">
+                    <span>Nombre y Apellido</span>
+                    <input type="text" placeholder="Nombre proyecto">
+                </div>
+
+                <div class="nombre">
+                    <span>Email</span>
+                    <input type="text" placeholder="Nombre proyecto">
+                </div>
+            </div>
+            <div class="datos">
+                <div class="nombre">
+                    <span>Ingresa el nombre de la optimización</span>
+                    <input type="text" placeholder="Nombre proyecto">
+                </div>
+
+                <div class="unidad">
+                    <span>Selecciona unidad de medida de tus cortes</span>
+                    <button>Milímetros (mm)</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tablero">
+            <h1>Tablero seleccionado</h1>
+            <div class="prod-resumen">
+                <img class="prod-thumb" src="https://www.ferreteriaprat.cl/media/catalog/product/cache/1/small_image/252x252/9df78eab33525d08d6e5fb8d27136e95/c/h/cha019905.jpg">
+                <div class="prod-detalle">
+                    <span class="marca">Marca del producto</span>
+                    <span class="descripcion">Enchapado Lingue Trop</span>
+                    <span class="medidas">Medidas</span>
+                    <span class="sku">SKU: TEST110189</span>
+                    <span class="precio">$20.990</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-cortes">
+            <h1>Ingreso de cortes</h1>
+            <p class="info1">
+                Ingresa las medidas para tu optimización. Recuerda considerar los milímetros de espesor del tapacanto a la medida final del corte.
+            </p>
+
+        </section>
+
+        <section class="cortes">
+            <div class="titulos-corte">
+                <div class="tablero">Tablero</div>
+            </div>
+
+            <div class="titulos">
+                <div>Tablero</div>
+                <div>Cant. cortes</div>
+                <div>Nombre</div>
+                <div>Sentido de la veta</div>
+                <div>Ancho (mm)</div>
+                <div>Alto (mm)</div>
+                <div></div>
+            </div>
+
+            <form>
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 1</h1></span><span class="num-tablero">1</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 2</h1></span><span class="num-tablero">2</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 3</h1></span><span class="num-tablero">3</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="no-desk">
+                        <h1>Tapacantos</h1>
+                    </div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 4</h1></span><span class="num-tablero">4</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="no-desk">
+                        <h1>Tapacantos</h1>
+                    </div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 5</h1></span><span class="num-tablero">5</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="no-desk">
+                        <h1>Tapacantos</h1>
+                    </div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 6</h1></span><span class="num-tablero">6</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="no-desk">
+                        <h1>Tapacantos</h1>
+                    </div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+
+                <div class="tabla-cortes">
+                    <div><label><span class="no-desk"><h1>Tablero 7</h1></span><span class="num-tablero">7</span></label></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
+                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div>
+                        <span class="no-desk">Sentido de la veta</span>
+                        <select name="veta">
+                            <option>Fija</option>
+                            <option>Libre</option>
+                        </select>
+                    </div>
+                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Alto</span><input type="amount"></div>
+                    <div class="no-desk">
+                        <h1>Tapacantos</h1>
+                    </div>
+                    <div class="ver-quitar">
+                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
