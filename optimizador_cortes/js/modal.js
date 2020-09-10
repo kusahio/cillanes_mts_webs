@@ -1,15 +1,15 @@
 var modal = document.getElementById("PopUp");
 
-var btn = document.getElementById("tabla");
+var ver = document.getElementById("ver-resumen");
 
-var span = document.getElementsByClassName("cerrar")[0];
+var btnClose = document.getElementById("close");
 
 
-btn.onclick = function() {
+ver.onclick = function() {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+btnClose.onclick = function() {
     modal.style.display = "none";
 }
 
