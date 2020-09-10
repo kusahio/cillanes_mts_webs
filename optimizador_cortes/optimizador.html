@@ -8,6 +8,7 @@
     <!--ESTILOS GENERALES-->
     <link rel="stylesheet" type="text/css" href="https://www.ferreteriaprat.cl/skin/frontend/shopper/default/css/override.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/modal.js"></script>
 </head>
 
 <body>
@@ -24,6 +25,25 @@
     </header>
 
     <div class="flex-container">
+
+        <div id="PopUp" class="popup">
+            <div class="popup-content">
+                <div class="nombre">Número tablero: Nombre tablero</div>
+                <div class="detalle">
+                    <span class="img-popup"><img src="https://www.ferreteriaprat.cl/media/catalog/product/cache/1/small_image/252x252/9df78eab33525d08d6e5fb8d27136e95/c/h/cha019905.jpg"></span>
+                    <div class="info-popup">
+                        <span><b>Detalle dimensiones</b></span>
+                        <div class="detalle-popup">
+                            <span>Cantidad de cortes: 2</span>
+                            <span>Ancho: 400mm</span>
+                            <span>Alto: 600mm</span>
+                            <span>Sentido de la veta: Fija</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="tableros-cant">
             <div>
                 <span>Para este proyecto necesitarás <b>0 tablero(s)</b></span>
@@ -106,8 +126,8 @@
             <form>
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 1</h1></span><span class="num-tablero">1</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -115,19 +135,19 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
 
                     <div class="ver-quitar">
-                        <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
+                        <button id="tabla"><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
                         <button><img src="trash.svg"><span class="no-desk">Eliminar pieza</span></button>
                     </div>
                 </div>
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 2</h1></span><span class="num-tablero">2</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -135,7 +155,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="ver-quitar">
                         <button><img src="eye.svg"><span class="no-desk">Ver pieza</span></button>
@@ -145,8 +165,8 @@
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 3</h1></span><span class="num-tablero">3</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -154,7 +174,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="no-desk">
                         <h1>Tapacantos</h1>
@@ -167,8 +187,8 @@
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 4</h1></span><span class="num-tablero">4</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -176,7 +196,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="no-desk">
                         <h1>Tapacantos</h1>
@@ -189,8 +209,8 @@
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 5</h1></span><span class="num-tablero">5</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -198,7 +218,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="no-desk">
                         <h1>Tapacantos</h1>
@@ -211,8 +231,8 @@
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 6</h1></span><span class="num-tablero">6</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -220,7 +240,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="no-desk">
                         <h1>Tapacantos</h1>
@@ -233,8 +253,8 @@
 
                 <div class="tabla-cortes">
                     <div><label><span class="no-desk"><h1>Tablero 7</h1></span><span class="num-tablero">7</span></label></div>
-                    <div><span class="no-desk">Cantidad de cortes</span><input type="number" required></div>
-                    <div><span class="no-desk">Nombre</span><input type="text" required></div>
+                    <div><span class="no-desk">Cantidad de cortes</span><input type="number"></div>
+                    <div><span class="no-desk">Nombre</span><input type="text"></div>
                     <div>
                         <span class="no-desk">Sentido de la veta</span>
                         <select name="veta">
@@ -242,7 +262,7 @@
                             <option>Libre</option>
                         </select>
                     </div>
-                    <div><span class="no-desk">Ancho</span><input type="amount" required></div>
+                    <div><span class="no-desk">Ancho</span><input type="amount"></div>
                     <div><span class="no-desk">Alto</span><input type="amount"></div>
                     <div class="no-desk">
                         <h1>Tapacantos</h1>
