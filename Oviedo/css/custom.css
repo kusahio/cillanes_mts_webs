@@ -2738,6 +2738,7 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
     margin-left: 2.5em;
     font-size: 24px;
     color: #3d3d3d;
+    display: none;
 }
 
 .page-title-wrapper .print {
@@ -2846,4 +2847,67 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 .breadcrumbs .items .item.product {
     border-right: none !important;
+}
+
+.slide-proveedores {
+    margin-bottom: 3em;
+}
+
+.block-static-block section .container .titles {
+    padding: .5em;
+}
+
+
+/* Filtro de precio */
+
+.ui-slider-handle {
+    background: #FF1B15 !important;
+    border-radius: 0 !important;
+}
+
+.ui-slider-horizontal {
+    display: flex !important;
+    align-items: center;
+    height: 4px !important;
+}
+
+.filter-options-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-options-content p {
+    order: 2;
+}
+
+.filter-options-content p label {
+    display: none;
+}
+
+.filter-options-content p input[type="text"] {
+    background: none;
+    color: #3d3d3d !important;
+    font-weight: normal !important;
+}
+
+.filter .items {
+    background: #f2f1f2;
+}
+
+.filter .items .item {
+    font-size: 16px;
+    font-weight: bold;
+    padding: .5rem 0;
+}
+
+.filter .items .item span {
+    padding: .5rem;
+}
+
+.filter .filter-current-subtitle {
+    font-size: 14px !important;
+}
+
+.filter .filter-current-subtitle:before {
+    display: none !important;
 }
