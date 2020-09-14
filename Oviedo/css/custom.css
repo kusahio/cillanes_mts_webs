@@ -2895,7 +2895,7 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 }
 
 .filter .items .item {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     padding: .5rem 0;
 }
@@ -2910,4 +2910,8 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 .filter .filter-current-subtitle:before {
     display: none !important;
+}
+
+.category .block.filter .filter-options .filter-options-content .item a {
+    font-size: .813em !important;
 }
