@@ -1994,6 +1994,113 @@ body.account .columns .column.main .block .block-content .box .box-actions a.cha
 
 /* Checkout */
 
+
+/*form*/
+
+#co-mercadopago-form,
+#co-mercadopago-form-ticket {
+    max-width: 100% !important;
+}
+
+@media(max-width:768px) {
+    .payment-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:580px) {
+    body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .label {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start !important;
+        height: max-content;
+    }
+    body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .label span {
+        width: 100%;
+        white-space: normal;
+    }
+    body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .class-custom-banner-checkout {
+        margin-top: 1rem !important;
+    }
+}
+
+.mp-box-inputs input,
+.mp-box-inputs select {
+    height: 35px !important;
+}
+
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-payment-method .form .mp-box-inputs #cardExpirationMonth {
+    width: 95%;
+}
+
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-payment-method .form .mp-box-inputs #docType {
+    width: 95%;
+}
+
+.mp-box-inputs label {
+    font-weight: normal !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 12px !important;
+    text-transform: unset !important;
+}
+
+.mp-box-inputs input[type="text"]:focus {
+    background-image: none !important;
+    background-size: unset !important;
+}
+
+.mp-box-inputs input[type="text"],
+.one-step-checkout-wrapper select,
+.modal-popup select {
+    display: block;
+    height: 35px;
+    padding: 0 0 0 .875em !important;
+    margin: 0 !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 5px !important;
+    font-size: .875em !important;
+    color: #000;
+    -webkit-transition: .3s;
+    transition: .3s !important;
+}
+
+body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .label .payment-icon {
+    height: 21px;
+    width: auto;
+}
+
+body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .label {
+    flex-wrap: wrap;
+    margin: .5rem 0;
+    align-items: center;
+}
+
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-payment-method ._active .payment-method-content {
+    display: block !important;
+    animation: paymentFade .3s;
+}
+
+@keyframes paymentFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body.checkout-index-index .checkout-payment-method .step-content .payments .opc-payment .payment-methods .payment-group .payment-method .payment-method-title .class-custom-banner-checkout {
+    margin: .5rem 0;
+}
+
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-payment-method ._active .payment-method-content .panel-checkout,
+body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-payment-method ._active .payment-method-content .actions-toolbar {
+    display: none !important;
+}
+
 .page-wrapper .page-header .content a img {
     width: 220px !important;
     height: auto !important;
