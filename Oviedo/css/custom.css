@@ -5577,6 +5577,18 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 /* PLP */
 
+@media(max-width:768px) {
+    .product__offer {
+        left: 10vw !important;
+    }
+}
+
+@media(max-width:480px) {
+    .product__offer {
+        left: 20vw !important;
+    }
+}
+
 .category .toolbar-products .limiter select,
 .category .toolbar-products .sorter select {
     border-radius: 4px !important;
