@@ -6,8 +6,10 @@
 
 /**/
 
-header .head-top {
-    padding: 2em 0 !important;
+@media(min-width:769px) {
+    header .head-top {
+        padding: 2em 0 !important;
+    }
 }
 
 .head-nav-top__logo a {
@@ -87,8 +89,11 @@ header .head-top .head-nav-top__cart .head-search button.action.search:before {
 
 @media(max-width:580px) {
     .nav-toggle {
-        top: -5px;
-        right: 0;
+        top: -5px !important;
+        right: 0 !important;
+    }
+    header .head-top .head-nav-top {
+        position: relative;
     }
     header .head-top .head-nav-top__cart .head-search {
         display: flex !important;
@@ -2275,10 +2280,6 @@ body.onestepcheckout-index-index.page-layout-1column .opc-wrapper .checkout-paym
 
 
 /**/
-
-header .head-top {
-    padding: 2em 0 !important;
-}
 
 .head-nav-top__logo a {
     display: block !important;
