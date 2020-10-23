@@ -5194,13 +5194,14 @@ border-right: 1px solid #cecece;
 
 .forgotPassword-container .page-title-wrapper .page-title .base {
     display: block !important;
+    margin-left: 0 !important;
 }
 
 .page-title-wrapper .page-title .base {
-    margin-left: 2.5em;
+    margin-left: 0;
     font-size: 24px;
     color: #3d3d3d;
-    display: none;
+    display: block;
 }
 
 .page-title-wrapper .print {
@@ -6352,4 +6353,16 @@ border-right: 1px solid #cecece;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/*Filter Actions*/
+
+.filter .filter-current+.block-actions {
+    display: flex !important;
+}
+
+.filter .filter-current+.block-actions a {
+    color: #ff1b15;
+    font-weight: 700;
 }
