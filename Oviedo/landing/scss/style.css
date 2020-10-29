@@ -311,6 +311,10 @@ nav {
   -moz-border-radius: 1rem;
 }
 
+.nav .cyber-blanco {
+  height: 40px;
+}
+
 .nav .counter {
   display: none;
 }

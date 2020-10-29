@@ -110,6 +110,9 @@
             box-shadow: 0 3px 6px rgba($color: $negro, $alpha: 0.16);
             transition: .3s;
             @include border-radius(1rem);
+            .cyber-blanco {
+                height: 40px;
+            }
             .counter {
                 display: none;
             }
