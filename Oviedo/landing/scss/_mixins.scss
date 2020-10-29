@@ -1,0 +1,211 @@
+// @import "variables";
+@mixin phone-s {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin phone-m {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin phone-l {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet-port {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin tablet-land {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin transition($time) {
+    transition: $time;
+    -webkit-transition: $time;
+    -moz-transition: $time;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin appearance($style) {
+    appearance: $style;
+    -webkit-appearance: $style;
+    -moz-appearance: $style;
+}
+
+@mixin placeholder {
+    &:placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+@mixin center-x {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@mixin center-y {
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+@mixin center-all {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@mixin selection {
+     ::selection {
+        @content;
+    }
+     ::-moz-selection {
+        @content;
+    }
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-around {
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-end {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin buybtn {
+    width: 100%;
+    height: 3rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin buybtn_enabled {
+    background: #FF0A00;
+    color: $blanco;
+}
+
+@mixin buybtn_disabled {
+    background: #cecece;
+    color: $blanco;
+}
+
+@mixin max-width {
+    width: 100%;
+    margin: 0 auto;
+    @include flex-col;
+    @include flex-center;
+    padding: 0 8vw;
+}
+
+@mixin title {
+    font-size: $title;
+    font-weight: 700;
+}
+
+@mixin dashed {
+    width: 3.125rem;
+    height: .188rem;
+    background: $rojo;
+}
+
+@mixin prod-box {
+    @include flex-col;
+    @include flex-center;
+    @include border-radius(.5rem);
+    overflow: hidden;
+    background: $blanco;
+    box-shadow: 0 0 32px rgba($color: #000000, $alpha: .16);
+}
+
+@mixin cr {
+    @include flex-col;
+    @include flex-between;
+    background: $rojo;
+    color: $blanco;
+    padding: .5rem 1rem;
+    .cr {
+        @include flex-row;
+        @include flex-around;
+        width: 100%;
+        .date {
+            @include flex-col;
+            @include flex-center;
+            text-align: center;
+        }
+    }
+}
+
+@mixin cr2 {
+    @include flex-row;
+    @include flex-between;
+    background: $rojo;
+    color: $blanco;
+    padding: .5rem 1rem;
+    .cr {
+        @include flex-row;
+        @include flex-around;
+        width: 100%;
+        .date {
+            @include flex-col;
+            @include flex-center;
+            text-align: center;
+        }
+    }
+}

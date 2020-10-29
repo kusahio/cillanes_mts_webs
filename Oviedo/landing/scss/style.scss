@@ -1,0 +1,246 @@
+        @import 'variables';
+        @import 'mixins';
+        @import 'reset';
+        html,
+        body {
+            height: auto !important;
+            font-size: 100%;
+            background: $grisbg;
+            color: $negro;
+            font-family: $roboto !important;
+            font-weight: 400;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        header,
+        section,
+        footer,
+        nav {
+            @include max-width;
+        }
+        
+        .preheader-cont {
+            @include flex-row;
+            @include flex-between;
+            width: 100%;
+            padding: .8rem 0;
+            .oviedo {
+                width: 100%;
+                max-width: 200px;
+            }
+            .cyber {
+                height: 79px;
+                width: auto;
+            }
+            .counter {
+                @include cr;
+                @include border-radius(.5rem);
+                box-shadow: 0 3px 6px rgba($color: $negro, $alpha: .16);
+                .cr {
+                    .date {
+                        padding: 0 .25rem;
+                    }
+                    .date #dia,
+                    .date #hora,
+                    .date #min,
+                    .date #seg {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    .date span b {
+                        font-size: $pricetachado;
+                        font-weight: 700;
+                    }
+                }
+                h2 {
+                    font-size: $price;
+                }
+            }
+        }
+        
+        .banner {
+            padding: 0 !important;
+            .banner_slides {
+                width: 100%;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        
+        .fixed {
+            position: fixed !important;
+            top: 0;
+            margin-top: 0 !important;
+            transition: width .3s;
+            width: 100%;
+            border-radius: 0 !important;
+            justify-content: flex-start !important;
+            .counter {
+                @include cr2;
+                display: flex !important;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                max-width: 400px;
+                .date {
+                    font-weight: 700;
+                }
+                h2 {
+                    font-size: $txtbtn;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .nav {
+            @include flex-row;
+            @include flex-center;
+            background: $rojo;
+            position: sticky;
+            top: 0;
+            margin-top: -1.5rem;
+            width: 100%;
+            box-shadow: 0 3px 6px rgba($color: $negro, $alpha: 0.16);
+            transition: .3s;
+            @include border-radius(1rem);
+            .counter {
+                display: none;
+            }
+            .nav_cat-btn {
+                @include flex-col;
+                @include flex-center;
+                padding: .5rem;
+                transition: ease all .3s;
+                &:hover {
+                    background: $blanco;
+                }
+                &:hover h2 {
+                    color: $footer;
+                }
+                &:hover img {
+                    filter: brightness(.35);
+                }
+                h2 {
+                    color: $blanco;
+                    font-size: $txtbtn;
+                }
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+        
+        .prod_container {
+            .prod-container {
+                margin-top: 2rem;
+                width: 100%;
+                @include flex-col;
+                .title {
+                    @include flex-col;
+                    h1 {
+                        @include title;
+                        width: 100%;
+                        @include flex-row;
+                    }
+                    .dashed {
+                        @include dashed;
+                    }
+                }
+                .prod_grid {
+                    @include flex-row;
+                    @include flex-between;
+                    width: 100%;
+                    margin-top: 2rem;
+                    flex-wrap: wrap;
+                    .prod_box {
+                        @include prod-box;
+                        width: 24%;
+                        margin-bottom: 1rem;
+                        img {
+                            width: 100%;
+                            max-width: 260px;
+                        }
+                        .prod_description {
+                            @include flex-col;
+                            width: 100%;
+                            padding: .5rem;
+                            .short-description {
+                                font-size: $shortdesc;
+                                height: 2rem;
+                                overflow: hidden;
+                            }
+                            .sku {
+                                font-size: $iva-sku;
+                            }
+                            .ofer {
+                                color: $rojo;
+                                font-size: $price;
+                                font-weight: 900;
+                                padding: .25rem 0;
+                                b {
+                                    font-size: $iva-sku;
+                                    color: $grisiva;
+                                    margin-left: .5rem;
+                                }
+                            }
+                            .before {
+                                color: $grisprice;
+                                font-size: $pricetachado;
+                                font-weight: 900;
+                                padding-bottom: .25rem;
+                                text-decoration: line-through;
+                            }
+                            button {
+                                @include border-radius(.5rem);
+                                @include flex-row;
+                                @include flex-center;
+                                @include buybtn;
+                                @include buybtn_enabled;
+                                transition: ease all .3s;
+                                img {
+                                    width: 2rem;
+                                }
+                                &:hover {
+                                    background: $negro;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        footer {
+            background: $footer;
+            .footer {
+                width: 100%;
+                @include flex-row;
+                @include flex-between;
+                padding: 1.5rem 0;
+                ul {
+                    @include flex-row;
+                    @include flex-between;
+                    li {
+                        padding: .5rem 2rem;
+                        a {
+                            color: $blanco;
+                            font-size: $footer-item;
+                        }
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            border-right: 1px solid $blanco;
+                        }
+                    }
+                }
+                img {
+                    height: 4.375rem;
+                }
+            }
+        }
