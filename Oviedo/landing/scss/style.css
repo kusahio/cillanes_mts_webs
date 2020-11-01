@@ -676,7 +676,7 @@ nav {
   }
 }
 
-.prod_container .prod-container .prod_grid .prod_box .prod_description button a {
+.prod_container .prod-container .prod_grid .prod_box .prod_description button span a {
   color: #fff;
 }
 
