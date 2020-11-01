@@ -676,6 +676,10 @@ nav {
   }
 }
 
+.prod_container .prod-container .prod_grid .prod_box .prod_description button a {
+  color: #fff;
+}
+
 @media (max-width: 480px) {
   .prod_container .prod-container .prod_grid .prod_box .prod_description button {
     font-size: 1rem;
