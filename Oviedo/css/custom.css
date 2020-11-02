@@ -4659,6 +4659,14 @@ body.checkout-cart-index .cart-container .cart-summary .checkout-methods-items .
 
 /* PLP */
 
+.label-cyber {
+    height: 24px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 3vh;
+}
+
 .product__detail .price-box .d-price-oferta .price-final span .price-wrapper .price {
     color: #ff1b15 !important;
 }
@@ -6365,4 +6373,8 @@ border-right: 1px solid #cecece;
 .filter .filter-current+.block-actions a {
     color: #ff1b15;
     font-weight: 700;
+}
+
+body.cms-home .destacado-home .product {
+    min-height: 390px;
 }
